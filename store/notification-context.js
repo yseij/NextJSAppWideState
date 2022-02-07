@@ -10,9 +10,7 @@ export function NotificationContextProvider(props) {
   const [activeNotification, setActiveNotification] = useState();
 
   function showNotificationHandler(notificationData) {
-    setActiveNotification({
-      notificationData,
-    });
+    setActiveNotification(notificationData);
   }
 
   function hideNotificationHandler() {
